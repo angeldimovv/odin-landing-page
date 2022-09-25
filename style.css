@@ -189,3 +189,59 @@ button {
   padding-top: 16px;
   text-align: left;
 }
+
+.tutorial .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 130px;
+  padding-bottom: 75px;
+}
+
+.tutorial .container .left {
+  padding-top: 70px;
+}
+
+.tutorial .container .right {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 33px;
+}
+
+.tutorial .container .right h2 {
+  font-size: var(--medium-font);
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+}
+
+.tutorial .container .right ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  counter-reset: my-counter;
+}
+
+.tutorial .container .right ol li {
+  counter-increment: my-counter;
+  margin-bottom: 16px;
+  font-size: var(--main-font);
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.tutorial .container .right ol > li::before {
+  content: counter(my-counter);
+  font-weight: 600;
+  font-size: var(--main-font);
+  line-height: 32px;
+  display: inline-block;
+  text-align: center;
+  background-color: #c7eeff;
+  border: none;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  margin-right: 16px;
+}
