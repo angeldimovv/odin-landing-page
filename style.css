@@ -15,8 +15,11 @@
   font-family: "Inter", sans-serif;
 }
 
-body {
-  margin: 0 160px;
+.main,
+.social,
+.benefits,
+.tutorial {
+  padding: 0 160px;
 }
 
 .main header {
@@ -109,4 +112,80 @@ button {
 
 .social .container img {
   max-height: 48px;
+}
+
+.benefits {
+  background-color: var(--accent);
+}
+
+.benefits .container {
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+}
+
+.benefits .container .heading {
+  color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding-top: 80px;
+}
+
+.benefits .container .heading h3 {
+  font-weight: 600;
+  font-size: var(--main-font);
+  letter-spacing: 3px;
+}
+
+.benefits .container .heading h2 {
+  font-weight: 700;
+  font-size: var(--medium-font);
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+.benefits .container {
+  padding-bottom: 133px;
+}
+
+.benefits .container .cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.benefits .container .cards .card i {
+  font-size: 44px;
+}
+
+.benefits .container .cards .card .icon-bg {
+  background-color: #c7eeff;
+  border: none;
+  border-radius: 50%;
+  width: 108px;
+  height: 108px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits .container .cards .card h2 {
+  color: #fafafa;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 100%;
+  padding-top: 48px;
+  text-align: left;
+}
+
+.benefits .container .cards .card h3 {
+  color: #fafafa;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  padding-top: 16px;
+  text-align: left;
 }
