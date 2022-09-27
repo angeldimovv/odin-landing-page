@@ -277,7 +277,7 @@ button {
 }
 
 .testimonial .container {
-  margin-bottom: 70px;
+  padding-bottom: 70px;
 }
 
 .testimonial .container .heading {
@@ -316,11 +316,12 @@ button {
 .testimonial .container .reviews .card {
   flex: 1 1 30%;
   align-items: center;
+  padding: 0 20px;
 }
 
 .testimonial .container .reviews .card h4 {
   font-size: var(--main-font);
-  font-weight: 400;
+  font-weight: 500;
   line-height: 28px;
   padding-top: 16px;
 }
@@ -354,4 +355,39 @@ button {
 .testimonial .container .reviews .card .profile .rating p {
   font-size: 14px;
   letter-spacing: -0.5px;
+}
+
+.cta .container {
+  margin: 70px 160px;
+  background-color: #0077c0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cta .container img {
+  width: 400px;
+  margin-left: 70px;
+  margin-top: 25px;
+}
+
+.cta .container .right h3 {
+  color: var(--white);
+  font-size: var(--main-font);
+  font-weight: 600;
+  letter-spacing: 3px;
+  padding-bottom: 8px;
+}
+
+.cta .container .right h2 {
+  color: var(--white);
+  font-size: var(--medium-font);
+  font-weight: 700;
+  line-height: 60px;
+  padding-bottom: 24px;
+}
+
+.cta .container .right .cta__button {
+  background-color: var(--white);
+  color: #0071d9;
 }
