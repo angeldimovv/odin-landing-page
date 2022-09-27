@@ -275,3 +275,83 @@ button {
   margin-top: 30px;
   margin-bottom: 0px;
 }
+
+.testimonial .container {
+  margin-bottom: 70px;
+}
+
+.testimonial .container .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding-top: 90px;
+}
+
+.testimonial .container .heading h3 {
+  font-size: var(--main-font);
+  font-weight: 600;
+  letter-spacing: 3px;
+  line-height: 19px;
+  color: var(--accent);
+}
+
+.testimonial .container .heading h2 {
+  font-size: var(--medium-font);
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+.testimonial .container .reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 24px;
+  padding-top: 68px;
+}
+
+.testimonial .container .reviews .card {
+  flex: 1 1 30%;
+  align-items: center;
+}
+
+.testimonial .container .reviews .card h4 {
+  font-size: var(--main-font);
+  font-weight: 400;
+  line-height: 28px;
+  padding-top: 16px;
+}
+
+.testimonial .container .reviews .card .profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.testimonial .container .reviews .card .profile img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.testimonial .container .reviews .card .profile .rating {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 2.5px 0;
+}
+
+.testimonial .container .reviews .card .profile .rating h3 {
+  font-size: var(--main-font);
+  font-weight: 500;
+  line-height: 19px;
+  padding-left: 2px;
+}
+
+.testimonial .container .reviews .card .profile .rating p {
+  font-size: 14px;
+  letter-spacing: -0.5px;
+}
