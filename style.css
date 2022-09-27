@@ -18,7 +18,9 @@
 .main,
 .social,
 .benefits,
-.tutorial {
+.tutorial,
+.explore,
+.testimonial {
   padding: 0 160px;
 }
 
@@ -208,7 +210,8 @@ button {
   gap: 33px;
 }
 
-.tutorial .container .right h2 {
+.tutorial .container .right h2,
+.explore .container .left h2 {
   font-size: var(--medium-font);
   font-weight: 700;
   line-height: 60px;
@@ -244,4 +247,31 @@ button {
   height: 32px;
   width: 32px;
   margin-right: 16px;
+}
+
+.explore {
+  background-color: #c7eeff;
+}
+
+.explore .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.explore .container .left h2 {
+  padding-bottom: 14px;
+}
+
+.explore .container .left h3 {
+  font-size: var(--main-font);
+  font-weight: 500;
+  line-height: 24px;
+  padding-bottom: 28px;
+}
+
+.explore .container .right img {
+  width: 460px;
+  margin-top: 30px;
+  margin-bottom: 0px;
 }
