@@ -2,6 +2,7 @@
   --black: #000000;
   --white: #ffffff;
   --accent: #0077c0;
+  --footer: #1d242b;
 
   --hero-font: 60px;
   --medium-font: 48px;
@@ -15,12 +16,17 @@
   font-family: "Inter", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .main,
 .social,
 .benefits,
 .tutorial,
 .explore,
-.testimonial {
+.testimonial,
+footer {
   padding: 0 160px;
 }
 
@@ -390,4 +396,117 @@ button {
 .cta .container .right .cta__button {
   background-color: var(--white);
   color: #0071d9;
+}
+
+footer {
+  background-color: var(--footer);
+  padding-top: 64px;
+  padding-bottom: 64px;
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  justify-content: space-between;
+}
+
+footer .info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+footer .info .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+footer .info .logo p {
+  color: #f7f8f8;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.64px;
+}
+
+footer .info .socials img {
+  width: 32px;
+  margin-right: 16px;
+}
+
+footer .info .copyright p {
+  color: #d9dbe1;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+footer .links {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+footer .links .company,
+footer .links .support,
+footer .links .company .link,
+footer .links .support .link {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+footer .links .company h3,
+footer .links .support h3,
+footer .links .subscribe h3 {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  padding-bottom: 24px;
+}
+
+footer .links .company .link a,
+footer .links .support .link a {
+  text-decoration: none;
+  color: #d9dbe1;
+  font-size: var(--main-font);
+  font-weight: 300;
+  line-height: 26px;
+}
+
+footer .links .company .link,
+footer .links .support .link {
+  gap: 12px;
+  width: 160px;
+}
+
+footer .links .subscribe input {
+  padding: 10px 0;
+  width: 100%;
+  background-color: #4a5055;
+  border: none;
+  border-radius: 8px;
+}
+
+footer .links .subscribe input::placeholder {
+  padding-left: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+footer .links .subscribe .input-icon {
+  display: block;
+}
+
+footer .links .subscribe .input-icon a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+footer .links .subscribe .input-icon i::before {
+  font-size: 24px;
+  transform: rotate(315deg);
+  position: relative;
+  left: 245px;
+  bottom: 31px;
 }

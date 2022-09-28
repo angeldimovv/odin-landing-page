@@ -19,6 +19,7 @@
     <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon" />
   </head>
   <body>
+    <a id="home"></a>
     <section class="main">
       <header>
         <div class="logo">
@@ -27,11 +28,11 @@
         </div>
         <nav class="navbar">
           <ul class="nav__links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">How It Works</a></li>
-            <li><a href="#">Hire Talent</a></li>
-            <a href="" class="cta"><button>Get Started</button></a>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#tutorial">How it Works</a></li>
+            <li><a href="#hire">Hire Talent</a></li>
+            <a href="#cta" class="cta"><button>Get Started</button></a>
           </ul>
         </nav>
       </header>
@@ -63,7 +64,7 @@
         <img src="./img/amazon.png" alt="" />
       </div>
     </section>
-    <section class="benefits">
+    <section class="benefits" id="about">
       <div class="container">
         <div class="heading">
           <h3>FEATURE</h3>
@@ -108,7 +109,7 @@
         </div>
       </div>
     </section>
-    <section class="tutorial">
+    <section class="tutorial" id="tutorial">
       <div class="container">
         <div class="left"><img src="./img/illustration.svg" alt="" /></div>
         <div class="right">
@@ -123,7 +124,7 @@
         </div>
       </div>
     </section>
-    <section class="explore">
+    <section class="explore" id="hire">
       <div class="container">
         <div class="left">
           <h2>
@@ -144,7 +145,7 @@
         </div>
       </div>
     </section>
-    <section class="testimonial">
+    <section class="testimonial" id="testimonials">
       <div class="container">
         <div class="heading">
           <h3>TESTIMONIAL</h3>
@@ -268,6 +269,7 @@
         </div>
       </div>
     </section>
+    <a id="cta"></a>
     <section class="cta">
       <div class="container">
         <img src="./img/cta-left.png" alt="" />
@@ -281,5 +283,59 @@
         </div>
       </div>
     </section>
+    <footer>
+      <div class="info">
+        <div class="logo">
+          <img src="./img/footer.svg" alt="" />
+          <p>Wakanda</p>
+        </div>
+        <div class="socials">
+          <img src="./img/insta.png" alt="" /><img
+            src="./img/social.png"
+            alt=""
+          /><img src="./img/twitter.png" alt="" /><img
+            src="./img/youtube.png"
+            alt=""
+          />
+        </div>
+        <div class="copyright">
+          <p>Copyright © 2022 Wakanda. All rights reserved</p>
+        </div>
+      </div>
+      <div class="links">
+        <div class="company">
+          <h3>Company</h3>
+          <div class="link">
+            <a href="#about">About Us</a>
+            <a href="#tutorial">How it Works</a>
+            <a href="#hire">Hire Talent</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+        </div>
+        <div class="support">
+          <h3>Support</h3>
+          <div class="link">
+            <a href="#">Help Center</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Legal</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Status</a>
+          </div>
+        </div>
+        <div class="subscribe">
+          <h3>Subscribe to our newsletter</h3>
+          <div class="input-icon">
+            <input
+              type="email"
+              name="email"
+              placeholder="Your email address"
+              required=""
+            />
+            <a href="#"><i class="uil uil-message"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
